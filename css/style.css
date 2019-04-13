@@ -1,0 +1,288 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body,
+legend {
+    font-family: 'Mada', sans-serif;
+    color: #354657;
+}
+
+.header h1,
+.top {
+    text-align: center;
+}
+
+.header h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #354657;
+    color:white;
+    font-size: 1.375em;
+    padding: 1.2em 0;
+}
+
+.top {
+    margin-top: 4.5625em;
+    border-bottom: 4px solid #354657;
+    margin-bottom: 3px;
+}
+
+.top h2 {
+    margin-bottom: 0;
+    font-size: 1.375em;
+    padding: 1.5em 0 .5em;
+}
+
+.top span {
+    display: inline-block;
+    margin-bottom: 1.875em;
+    color: silver;
+}
+
+/* FORM STYLES */
+
+form {
+    border-top: 2px solid #354657;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.375em;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+.information {
+    border-bottom: 2px solid #354657;
+}
+
+.flex input,
+.flex select,
+.news textarea {
+    margin: 10px 0 20px;
+    border-style: solid;
+    border: solid 1px #F0F0F0;
+    border-radius: 3px;
+    background-color: #F0F0F0;
+    padding: 1em;
+    height: 3.125em;
+    width: 100%;
+    color: slategray;
+    transition: transform 1s;
+}
+
+.flex label,
+.news label,
+.news span {
+    color: rgba(53, 70, 87, 0.69);
+    font-size: 1.125em;
+}
+
+/* Placeholder */
+.flex input::placeholder{
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+.flex input::-webkit-input-placeholder{
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+.flex input::-ms-input-placeholder{
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+textarea::placeholder{
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+textarea::-webkit-input-placeholder{
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+textarea::-ms-input-placeholder{
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+textarea::placeholder {
+    text-align: left;
+}
+
+textarea::-webkit-input-placeholder{
+    text-align: left;
+}
+
+textarea::-ms-input-placeholder {
+    text-align: left;
+}
+
+input:focus::placeholder{
+    color:white;
+}
+
+input:focus::-webkit-input-placeholder{
+    color:white;
+}
+
+input:focus::-ms-input-placeholder{
+    color:white;
+}
+
+textarea:focus::placeholder{
+    color:white;
+}
+
+textarea:focus::-webkit-input-placeholder{
+    color:white;
+}
+
+textarea:focus::-ms-input-placeholder {
+    color:white;
+}
+
+/* disables choose state option */
+option[value=""][disabled] {
+    display: none;
+  }
+
+ /*Focus and hover psuedo selector */
+input:focus,
+select:focus,
+option:focus,
+textarea:focus{
+    outline-color:#354657;
+    outline-width: thick;
+    background-color: #354657;
+    color:white;
+}
+
+.flex input:hover,
+select:hover,
+textarea:hover {
+    cursor: pointer;
+    transform: translate(3px, 3px);
+    box-shadow: -6px -5px 8px 0px rgba(199,203,207,1);
+}
+
+option:hover,
+.news input:hover {
+    cursor: pointer;
+}
+
+.contact_field input:last-of-type {
+    width: 50%;
+}
+
+.flex {
+    padding-bottom: 1em;
+}
+
+.news span {
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+fieldset .padding {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.news_topic {
+    display: inline-block;
+    padding: 0
+}
+
+.news textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    font-size: 1.125em;
+    padding: 1.125em;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #19beb6;
+    color: white;
+}
+
+footer {
+    margin: 1.5625em 0 12.5em;
+    text-align: center;
+    color: rgba(53, 70, 87, 0.64);
+    font-style: italic;
+}
+
+/* 768px media query  */
+
+@media (min-width: 768px) {
+
+html {
+    width: 60%;
+    max-width: 1024px;
+}
+
+.flex {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex label {
+    width: 30%;
+    padding-top: 1.3em;
+}
+
+.flex input,
+.flex select {
+    width: 70%;
+
+}
+
+.contact_field input:last-of-type {
+    width: 25%;
+}
+
+}
+
